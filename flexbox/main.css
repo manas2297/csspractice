@@ -1,0 +1,38 @@
+.form-row{
+  padding: 10px 0;
+  display: flex;
+}
+
+.form-row label{
+  padding-right: 10px;
+  flex: 1;
+}
+.form-row input{
+  flex: 1;
+}
+/*Just by placing the display flex property here we make the 3 columns sit
+side by side. But the mainColumn has higher width as compared to the other
+colomns, due to the contents.*/
+.column-layout{
+  max-width: 1300px;
+  background-color: #333;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  display: flex;
+  color: white;
+}
+
+.mainColumn{
+  flex: 3;
+  order: 2;
+  padding: 0px 20px;
+}
+.sidebar-one{
+  flex: 1;
+  order: 1;
+}
+.sidebar-two{
+  flex: 1;
+  order: 3;
+}

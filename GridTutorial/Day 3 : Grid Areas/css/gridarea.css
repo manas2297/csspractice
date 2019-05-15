@@ -1,0 +1,86 @@
+body{
+    font-family: 'Kodchasan', sans-serif;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0.6em;
+    grid-template-areas: 
+    "header header"
+    "sidebar c"
+    "footer footer";
+    
+
+}
+
+.wrapper > div{
+    /* background-color: rgb(173, 171, 171); */
+}
+.wrapper > div:nth-child(odd){
+    /* background-color: #eee; */
+}
+
+.header{
+    grid-area: header;
+    /* background-color: #eee; */
+    margin-top: -7px;
+}
+.header ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: #333;
+border-radius: 4px;
+}
+.header li{
+    display: inline;
+    /* float:left; */
+}
+.header li> a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    /* background-color: #fff; */
+    /* margin: 5px 5px; */
+}
+.header li a:hover{
+    background: #111;
+    border-radius: 4px;
+}
+.header li:nth-child(3){
+    float: right;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: linear-gradient(rgba(46,136,106,0.7),rgba(48,139,109,0.9));
+    /* justify-content: center; */
+    border-radius: 4px;
+    text-align: center;
+}
+.mainContent{
+    grid-area: c;
+    padding: 10px 40px;
+    
+    border-left: 1px solid black;
+
+}
+.mainContent h1{
+    color: rgb(46, 136, 106);
+}
+.mainContent p{
+   color: rgb(54, 54, 54);
+   font-size: 1.1em;
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    
+    border-radius: 4px;
+    
+}
+.footer p{
+    text-align: center;
+    font-size: 12px;
+}

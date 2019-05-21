@@ -13,12 +13,12 @@ body{
 
 }
 
-.wrapper > div{
+/* .wrapper > div{
     /* background-color: rgb(173, 171, 171); */
-}
-.wrapper > div:nth-child(odd){
+
+/* .wrapper > div:nth-child(odd){
     /* background-color: #eee; */
-}
+
 
 .header{
     grid-area: header;
@@ -33,11 +33,11 @@ background-color: #333;
 border-radius: 4px;
 }
 .header li{
-    display: inline;
+    display: inline-block;
     /* float:left; */
 }
 .header li> a{
-    display: inline-block;
+    display: block;
     padding: 20px;
     text-decoration: none;
     color: white;
